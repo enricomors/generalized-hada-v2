@@ -9,4 +9,4 @@ services:
       # remote: uses the Data Exchange service for resources,
       #         expected to be reacheable at localhost:5333
     environment:
-      - INIT_TYPE=remote
+      - INIT_TYPE=local
