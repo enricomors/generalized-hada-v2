@@ -42,7 +42,7 @@ elif init_type == 'remote':
 else:
     raise AttributeError('Environment variable INIT_TYPE must be se to "local" or "remote"')
 
-models = MLModels(db, datasets, models_path_no_inp, models_path_no_inp)
+models = MLModels(db, datasets, models_path_no_inp, models_path_inp)
 
 # ==============================================================================
 # Utility functions

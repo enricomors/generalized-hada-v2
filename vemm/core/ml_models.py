@@ -1,6 +1,3 @@
-'''
-Class that handles operations that have to be carried out on the ML models.
-'''
 import os
 import pickle
 import time
@@ -8,6 +5,9 @@ from multiprocessing import Process, Manager
 from sklearn.tree import DecisionTreeRegressor
 
 class MLModels():
+    """
+    Class that handles operations that have to be carried out on the ML models.
+    """
     def __init__(self, db, datasets, models_path_no_inp, models_path_inp):
         """Handles all operations on ML models.
 

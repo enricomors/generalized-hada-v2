@@ -91,7 +91,7 @@ class ConfigDB():
             AttributeError: Hyperparameters and/or Targets not matching across different hardware given the same algorithm.
         """
         
-        # contains two dictionaries, one for the input-dependent case, one for ther inpude-independent one;
+        # contains two dictionaries, one for the input-dependent case, one for the input-independent one;
         # the first one has an additional 'inputs' field.
         # dictionary with the name of algorithms as keys and values structured like this:
         #{

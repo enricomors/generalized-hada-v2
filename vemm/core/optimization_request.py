@@ -162,7 +162,7 @@ class HardwarePrices():
 
 
 class OptimizationSolution():
-    '''Class containing a solution produced by HADA.'''
+    """Class containing a solution produced by HADA."""
     def __init__(self, chosen_hw, hyperparams_values, targets_values):
         self.chosen_hw = chosen_hw
         self.hyperparams_values = hyperparams_values

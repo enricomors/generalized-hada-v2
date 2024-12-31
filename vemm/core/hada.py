@@ -13,13 +13,13 @@ def HADA(db : ConfigDB,
          models,
          var_bounds,
          robust_coeff):
-    '''
+    """
     Implement HADA:
         1. Declare variables and basic constraints
-        2. Embed predictive models 
-        3. Declare user-defined constraints and objective 
+        2. Embed predictive models
+        3. Declare user-defined constraints and objective
         4. Solve the model and output an optimal matching (hw-platform, alg-configuration)
-    
+
     PARAMETERS
     ---------
     db : an instance of class core.configdb.ConfigDB
@@ -31,8 +31,8 @@ def HADA(db : ConfigDB,
 
     RETURN
     ------
-    sol : a dict with the solution found, or None if no solution is found 
-    '''
+    sol : a dict with the solution found, or None if no solution is found
+    """
 
     ####### MODEL #######
     bkd = cplex_backend.CplexBackend()
