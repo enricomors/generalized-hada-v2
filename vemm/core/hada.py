@@ -194,6 +194,13 @@ def HADA(db : ConfigDB,
             if round(sol[f'b_{hw}']) == 1:
                 chosen_hw = hw
                 break
+        """
+        # scale co2 emissions by the country conversion factor
+        for target in targets:
+            if target == "CO2e(kg)":
+                scaling_factor = 1
+                sol[f"{chosen_hw}_CO2e(kg)"] = sol[f"{chosen_hw}_CO2e(kg)"] * scaling_factor
+        """
         targets_values = {target: round(sol[f"{chosen_hw}_{target}"]) if var_type[target] != mdl.continuous_vartype else sol[f"{chosen_hw}_{target}"] for target in targets}
         hyperparams_values = {hyperparam: round(sol[hyperparam]) if var_type[hyperparam] != mdl.continuous_vartype else sol[hyperparam] for hyperparam in hyperparams}
         
