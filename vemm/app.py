@@ -103,7 +103,7 @@ def parse_request_form(algorithm, form_dict, input_dependent=False, inputs_file=
     return optimization_request
 
 def parse_request_json(data):
-    '''
+    """
     Example:
     {
         "algorithm":"fwt",
@@ -118,14 +118,14 @@ def parse_request_json(data):
             ...
         ]
         "inputs": [  # optional, only for input-dependent cases
-        { 
-        "name": "input_var_0", 
-        "value": 32 
-        }, 
-        ... 
-    ], 
+        {
+        "name": "input_var_0",
+        "value": 32
+        },
+        ...
+    ],
     }
-    '''
+    """
     input_dependent = 'inputs' in data
 
     inputs = None
