@@ -169,7 +169,7 @@ class ConfigDB():
                 raise AttributeError(f'Targets not matching for algorithm {config["name"]} on different hws.')
             if input_dependent:
                 # checking consistency of inputs across hws for a given algorithm
-                if self.db[case_key][config['name']]['targets'] != inputs:
+                if self.db[case_key][config['name']]['inputs'] != inputs:
                     raise AttributeError(f'Inputs not matching for algorithm {config["name"]} on different hws.')
 
             # TODO (eventually): check consistency of HW prices (suggested in config) for a given HW across all algorithms.

@@ -129,7 +129,7 @@
 
         <input value="optimize" type="hidden" name="form_id">
             <div class="row">
-                <div class="column column-50">
+                <div class="column column-33">
                     <label class="label-inline">Target</label>
                     <select name="target" id="target">
                         {% for target in targets %}
@@ -143,9 +143,16 @@
                     <br />
                 </div>
 
-                <div class="column column-50">
+                <div class="column column-33">
                     <label class="label-inline">Robustness factor</label>
                     <input type="text" name="robust_factor" id="robust_factor" placeholder="Optional">
+                </div>
+
+                <div class="column column-33">
+                    <label class="label-inline">Country</label>
+                    <select name="country" id="country">
+                        <option value="Italy">Italy</option>
+                    </select>
                 </div>
             </div>
 
