@@ -151,7 +151,9 @@
                 <div class="column column-33">
                     <label class="label-inline">Country</label>
                     <select name="country" id="country">
-                        <option value="Italy">Italy</option>
+                        {% for country in countries %}
+                        <option value="{{country}}">{{ country }}</option>
+                        {% endfor %}
                     </select>
                 </div>
             </div>

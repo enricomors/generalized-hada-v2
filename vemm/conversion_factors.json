@@ -1,0 +1,854 @@
+{
+    "Aruba": {
+        "carbon_intensity": 561.224,
+        "conversion_factor": 1.6969865565224753
+    },
+    "Afghanistan": {
+        "carbon_intensity": 132.53,
+        "conversion_factor": 0.4007341602210947
+    },
+    "Angola": {
+        "carbon_intensity": 174.734,
+        "conversion_factor": 0.5283474138087434
+    },
+    "Albania": {
+        "carbon_intensity": 24.286,
+        "conversion_factor": 0.0734341644543085
+    },
+    "United Arab Emirates": {
+        "carbon_intensity": 561.135,
+        "conversion_factor": 1.696717445074051
+    },
+    "Argentina": {
+        "carbon_intensity": 354.103,
+        "conversion_factor": 1.0707097890045294
+    },
+    "Armenia": {
+        "carbon_intensity": 264.538,
+        "conversion_factor": 0.7998899364413186
+    },
+    "American Samoa": {
+        "carbon_intensity": 611.111,
+        "conversion_factor": 1.8478310826746653
+    },
+    "Antigua and Barbuda": {
+        "carbon_intensity": 611.111,
+        "conversion_factor": 1.8478310826746653
+    },
+    "Australia": {
+        "carbon_intensity": 548.692,
+        "conversion_factor": 1.659093245605017
+    },
+    "Austria": {
+        "carbon_intensity": 110.812,
+        "conversion_factor": 0.33506491935727717
+    },
+    "Azerbaijan": {
+        "carbon_intensity": 671.389,
+        "conversion_factor": 2.0300951263614317
+    },
+    "Burundi": {
+        "carbon_intensity": 250.0,
+        "conversion_factor": 0.7559310348998239
+    },
+    "Belgium": {
+        "carbon_intensity": 138.107,
+        "conversion_factor": 0.41759746974763995
+    },
+    "Benin": {
+        "carbon_intensity": 584.071,
+        "conversion_factor": 1.7660695819399004
+    },
+    "Burkina Faso": {
+        "carbon_intensity": 467.533,
+        "conversion_factor": 1.4136908181592778
+    },
+    "Bangladesh": {
+        "carbon_intensity": 691.411,
+        "conversion_factor": 2.0906361310844885
+    },
+    "Bulgaria": {
+        "carbon_intensity": 335.334,
+        "conversion_factor": 1.0139575106283902
+    },
+    "Bahrain": {
+        "carbon_intensity": 904.615,
+        "conversion_factor": 2.735306212543617
+    },
+    "Bahamas": {
+        "carbon_intensity": 660.099,
+        "conversion_factor": 1.9959572808253558
+    },
+    "Bosnia and Herzegovina": {
+        "carbon_intensity": 600.0,
+        "conversion_factor": 1.8142344837595776
+    },
+    "Belarus": {
+        "carbon_intensity": 441.74,
+        "conversion_factor": 1.335699901426593
+    },
+    "Belize": {
+        "carbon_intensity": 225.806,
+        "conversion_factor": 0.6827750530663587
+    },
+    "Bermuda": {
+        "carbon_intensity": 650.794,
+        "conversion_factor": 1.9678215277063842
+    },
+    "Bolivia": {
+        "carbon_intensity": 531.687,
+        "conversion_factor": 1.607674816611131
+    },
+    "Brazil": {
+        "carbon_intensity": 98.348,
+        "conversion_factor": 0.29737722168131153
+    },
+    "Barbados": {
+        "carbon_intensity": 605.505,
+        "conversion_factor": 1.8308800851480718
+    },
+    "Brunei": {
+        "carbon_intensity": 893.913,
+        "conversion_factor": 2.7029463168016252
+    },
+    "Bhutan": {
+        "carbon_intensity": 23.333,
+        "conversion_factor": 0.07055255534927037
+    },
+    "Botswana": {
+        "carbon_intensity": 847.909,
+        "conversion_factor": 2.5638429114834995
+    },
+    "Central African Republic": {
+        "carbon_intensity": 0.0,
+        "conversion_factor": 0.0
+    },
+    "Canada": {
+        "carbon_intensity": 170.043,
+        "conversion_factor": 0.514163123869883
+    },
+    "Switzerland": {
+        "carbon_intensity": 34.843,
+        "conversion_factor": 0.10535562019605828
+    },
+    "Chile": {
+        "carbon_intensity": 291.113,
+        "conversion_factor": 0.8802454054511698
+    },
+    "China": {
+        "carbon_intensity": 582.317,
+        "conversion_factor": 1.7607659697990432
+    },
+    "Cote d'Ivoire": {
+        "carbon_intensity": 393.885,
+        "conversion_factor": 1.1909995827260687
+    },
+    "Cameroon": {
+        "carbon_intensity": 305.419,
+        "conversion_factor": 0.9235028029922773
+    },
+    "Democratic Republic of Congo": {
+        "carbon_intensity": 24.457,
+        "conversion_factor": 0.07395122128217999
+    },
+    "Congo": {
+        "carbon_intensity": 700.0,
+        "conversion_factor": 2.116606897719507
+    },
+    "Cook Islands": {
+        "carbon_intensity": 250.0,
+        "conversion_factor": 0.7559310348998239
+    },
+    "Colombia": {
+        "carbon_intensity": 259.511,
+        "conversion_factor": 0.784689675191553
+    },
+    "Comoros": {
+        "carbon_intensity": 642.857,
+        "conversion_factor": 1.9438222292103844
+    },
+    "Cape Verde": {
+        "carbon_intensity": 558.14,
+        "conversion_factor": 1.687661391275951
+    },
+    "Costa Rica": {
+        "carbon_intensity": 53.378,
+        "conversion_factor": 0.1614003471235312
+    },
+    "Cuba": {
+        "carbon_intensity": 637.61,
+        "conversion_factor": 1.9279567486499072
+    },
+    "Cayman Islands": {
+        "carbon_intensity": 642.857,
+        "conversion_factor": 1.9438222292103844
+    },
+    "Cyprus": {
+        "carbon_intensity": 534.323,
+        "conversion_factor": 1.6156453534431146
+    },
+    "Czechia": {
+        "carbon_intensity": 449.724,
+        "conversion_factor": 1.3598413149571538
+    },
+    "Germany": {
+        "carbon_intensity": 380.95,
+        "conversion_factor": 1.1518877109803518
+    },
+    "Djibouti": {
+        "carbon_intensity": 692.308,
+        "conversion_factor": 2.0933484116377095
+    },
+    "Dominica": {
+        "carbon_intensity": 529.412,
+        "conversion_factor": 1.6007958441935426
+    },
+    "Denmark": {
+        "carbon_intensity": 151.65,
+        "conversion_factor": 0.45854776577023326
+    },
+    "Dominican Republic": {
+        "carbon_intensity": 580.78,
+        "conversion_factor": 1.756118505796479
+    },
+    "Algeria": {
+        "carbon_intensity": 634.611,
+        "conversion_factor": 1.9188885999552487
+    },
+    "Ecuador": {
+        "carbon_intensity": 150.224,
+        "conversion_factor": 0.4542359351471646
+    },
+    "Egypt": {
+        "carbon_intensity": 570.306,
+        "conversion_factor": 1.7244480191583162
+    },
+    "Eritrea": {
+        "carbon_intensity": 631.579,
+        "conversion_factor": 1.9097206683639836
+    },
+    "Western Sahara": {
+        "carbon_intensity": 666.667,
+        "conversion_factor": 2.015817100974244
+    },
+    "Spain": {
+        "carbon_intensity": 174.05,
+        "conversion_factor": 0.5262791864972575
+    },
+    "Estonia": {
+        "carbon_intensity": 416.667,
+        "conversion_factor": 1.2598860660744198
+    },
+    "Ethiopia": {
+        "carbon_intensity": 24.643,
+        "conversion_factor": 0.07451363397214546
+    },
+    "Finland": {
+        "carbon_intensity": 79.158,
+        "conversion_factor": 0.23935195544240107
+    },
+    "Fiji": {
+        "carbon_intensity": 288.462,
+        "conversion_factor": 0.872229512757092
+    },
+    "Falkland Islands": {
+        "carbon_intensity": 500.0,
+        "conversion_factor": 1.5118620697996479
+    },
+    "France": {
+        "carbon_intensity": 56.039,
+        "conversion_factor": 0.16944647705900495
+    },
+    "Faroe Islands": {
+        "carbon_intensity": 404.762,
+        "conversion_factor": 1.2238886301924903
+    },
+    "Gabon": {
+        "carbon_intensity": 491.597,
+        "conversion_factor": 1.486453715854595
+    },
+    "United Kingdom": {
+        "carbon_intensity": 237.589,
+        "conversion_factor": 0.7184035946032571
+    },
+    "Georgia": {
+        "carbon_intensity": 167.594,
+        "conversion_factor": 0.5067580234520044
+    },
+    "Ghana": {
+        "carbon_intensity": 484.0,
+        "conversion_factor": 1.4634824835660591
+    },
+    "Gibraltar": {
+        "carbon_intensity": 600.0,
+        "conversion_factor": 1.8142344837595776
+    },
+    "Guinea": {
+        "carbon_intensity": 236.842,
+        "conversion_factor": 0.7161448726709765
+    },
+    "Guadeloupe": {
+        "carbon_intensity": 500.0,
+        "conversion_factor": 1.5118620697996479
+    },
+    "Gambia": {
+        "carbon_intensity": 666.667,
+        "conversion_factor": 2.015817100974244
+    },
+    "Guinea-Bissau": {
+        "carbon_intensity": 625.0,
+        "conversion_factor": 1.88982758724956
+    },
+    "Equatorial Guinea": {
+        "carbon_intensity": 591.837,
+        "conversion_factor": 1.7895518236080286
+    },
+    "Greece": {
+        "carbon_intensity": 336.574,
+        "conversion_factor": 1.0177069285614935
+    },
+    "Grenada": {
+        "carbon_intensity": 640.0,
+        "conversion_factor": 1.9351834493435494
+    },
+    "Greenland": {
+        "carbon_intensity": 178.571,
+        "conversion_factor": 0.5399494433323858
+    },
+    "Guatemala": {
+        "carbon_intensity": 328.268,
+        "conversion_factor": 0.9925918758579816
+    },
+    "French Guiana": {
+        "carbon_intensity": 217.822,
+        "conversion_factor": 0.6586336395357978
+    },
+    "Guam": {
+        "carbon_intensity": 622.857,
+        "conversion_factor": 1.8833477464183985
+    },
+    "Guyana": {
+        "carbon_intensity": 640.351,
+        "conversion_factor": 1.9362447765165487
+    },
+    "Hong Kong": {
+        "carbon_intensity": 699.499,
+        "conversion_factor": 2.115092011925568
+    },
+    "Honduras": {
+        "carbon_intensity": 282.265,
+        "conversion_factor": 0.8534914942639952
+    },
+    "Croatia": {
+        "carbon_intensity": 204.962,
+        "conversion_factor": 0.6197485471005508
+    },
+    "Haiti": {
+        "carbon_intensity": 567.308,
+        "conversion_factor": 1.7153828941877973
+    },
+    "Hungary": {
+        "carbon_intensity": 204.19,
+        "conversion_factor": 0.6174142320647802
+    },
+    "Indonesia": {
+        "carbon_intensity": 675.931,
+        "conversion_factor": 2.043828881403492
+    },
+    "India": {
+        "carbon_intensity": 713.441,
+        "conversion_factor": 2.1572487738798616
+    },
+    "Ireland": {
+        "carbon_intensity": 290.805,
+        "conversion_factor": 0.8793140984161733
+    },
+    "Iran": {
+        "carbon_intensity": 655.125,
+        "conversion_factor": 1.9809172769549888
+    },
+    "Iraq": {
+        "carbon_intensity": 688.814,
+        "conversion_factor": 2.0827835194939492
+    },
+    "Iceland": {
+        "carbon_intensity": 27.68,
+        "conversion_factor": 0.08369668418410851
+    },
+    "Israel": {
+        "carbon_intensity": 582.927,
+        "conversion_factor": 1.7626104415241988
+    },
+    "Italy": {
+        "carbon_intensity": 330.718,
+        "conversion_factor": 1.0
+    },
+    "Jamaica": {
+        "carbon_intensity": 555.556,
+        "conversion_factor": 1.6798480880992266
+    },
+    "Jordan": {
+        "carbon_intensity": 540.924,
+        "conversion_factor": 1.6356049564886095
+    },
+    "Japan": {
+        "carbon_intensity": 485.392,
+        "conversion_factor": 1.4676915075683814
+    },
+    "Kazakhstan": {
+        "carbon_intensity": 821.391,
+        "conversion_factor": 2.483659794749605
+    },
+    "Kenya": {
+        "carbon_intensity": 70.492,
+        "conversion_factor": 0.21314836204863358
+    },
+    "Kyrgyzstan": {
+        "carbon_intensity": 147.292,
+        "conversion_factor": 0.4453703759698595
+    },
+    "Cambodia": {
+        "carbon_intensity": 417.707,
+        "conversion_factor": 1.2630307391796032
+    },
+    "Kiribati": {
+        "carbon_intensity": 666.667,
+        "conversion_factor": 2.015817100974244
+    },
+    "Saint Kitts and Nevis": {
+        "carbon_intensity": 636.364,
+        "conversion_factor": 1.9241891883719664
+    },
+    "South Korea": {
+        "carbon_intensity": 430.567,
+        "conversion_factor": 1.30191583161485
+    },
+    "Kuwait": {
+        "carbon_intensity": 649.163,
+        "conversion_factor": 1.9628898336346978
+    },
+    "Laos": {
+        "carbon_intensity": 265.506,
+        "conversion_factor": 0.8028169014084505
+    },
+    "Lebanon": {
+        "carbon_intensity": 599.005,
+        "conversion_factor": 1.8112258782406763
+    },
+    "Liberia": {
+        "carbon_intensity": 227.848,
+        "conversion_factor": 0.6889494977594204
+    },
+    "Libya": {
+        "carbon_intensity": 818.692,
+        "conversion_factor": 2.4754987632968266
+    },
+    "Saint Lucia": {
+        "carbon_intensity": 666.667,
+        "conversion_factor": 2.015817100974244
+    },
+    "Sri Lanka": {
+        "carbon_intensity": 509.781,
+        "conversion_factor": 1.5414371156090687
+    },
+    "Lesotho": {
+        "carbon_intensity": 20.0,
+        "conversion_factor": 0.06047448279198592
+    },
+    "Lithuania": {
+        "carbon_intensity": 160.072,
+        "conversion_factor": 0.4840135704739385
+    },
+    "Luxembourg": {
+        "carbon_intensity": 105.263,
+        "conversion_factor": 0.3182862741066407
+    },
+    "Latvia": {
+        "carbon_intensity": 123.2,
+        "conversion_factor": 0.37252281399863324
+    },
+    "Macao": {
+        "carbon_intensity": 448.98,
+        "conversion_factor": 1.3575916641972918
+    },
+    "Morocco": {
+        "carbon_intensity": 630.014,
+        "conversion_factor": 1.9049885400855109
+    },
+    "Moldova": {
+        "carbon_intensity": 643.464,
+        "conversion_factor": 1.9456576297631216
+    },
+    "Madagascar": {
+        "carbon_intensity": 436.441,
+        "conversion_factor": 1.3196771872108561
+    },
+    "Maldives": {
+        "carbon_intensity": 611.765,
+        "conversion_factor": 1.8498085982619632
+    },
+    "Mexico": {
+        "carbon_intensity": 507.245,
+        "conversion_factor": 1.5337689511910448
+    },
+    "North Macedonia": {
+        "carbon_intensity": 565.345,
+        "conversion_factor": 1.709447323701764
+    },
+    "Mali": {
+        "carbon_intensity": 408.0,
+        "conversion_factor": 1.2336794489565128
+    },
+    "Malta": {
+        "carbon_intensity": 459.144,
+        "conversion_factor": 1.3883247963521792
+    },
+    "Myanmar": {
+        "carbon_intensity": 398.898,
+        "conversion_factor": 1.20615751183788
+    },
+    "Montenegro": {
+        "carbon_intensity": 417.073,
+        "conversion_factor": 1.261113698075097
+    },
+    "Mongolia": {
+        "carbon_intensity": 775.309,
+        "conversion_factor": 2.3443205389485904
+    },
+    "Mozambique": {
+        "carbon_intensity": 135.647,
+        "conversion_factor": 0.41015910836422564
+    },
+    "Mauritania": {
+        "carbon_intensity": 464.706,
+        "conversion_factor": 1.4051427500166305
+    },
+    "Montserrat": {
+        "carbon_intensity": 1000.0,
+        "conversion_factor": 3.0237241395992958
+    },
+    "Martinique": {
+        "carbon_intensity": 523.179,
+        "conversion_factor": 1.58194897163142
+    },
+    "Mauritius": {
+        "carbon_intensity": 632.479,
+        "conversion_factor": 1.9124420200896233
+    },
+    "Malawi": {
+        "carbon_intensity": 66.667,
+        "conversion_factor": 0.20158261721466628
+    },
+    "Malaysia": {
+        "carbon_intensity": 605.831,
+        "conversion_factor": 1.8318658192175812
+    },
+    "Namibia": {
+        "carbon_intensity": 59.259,
+        "conversion_factor": 0.17918286878851467
+    },
+    "New Caledonia": {
+        "carbon_intensity": 660.584,
+        "conversion_factor": 1.9974237870330611
+    },
+    "Niger": {
+        "carbon_intensity": 670.886,
+        "conversion_factor": 2.028574193119213
+    },
+    "Nigeria": {
+        "carbon_intensity": 523.247,
+        "conversion_factor": 1.5821545848729126
+    },
+    "Nicaragua": {
+        "carbon_intensity": 265.116,
+        "conversion_factor": 0.8016376489940069
+    },
+    "Netherlands": {
+        "carbon_intensity": 267.622,
+        "conversion_factor": 0.8092151016878428
+    },
+    "Norway": {
+        "carbon_intensity": 30.08,
+        "conversion_factor": 0.09095362211914682
+    },
+    "Nepal": {
+        "carbon_intensity": 24.44,
+        "conversion_factor": 0.0738998179718068
+    },
+    "Nauru": {
+        "carbon_intensity": 750.0,
+        "conversion_factor": 2.267793104699472
+    },
+    "New Zealand": {
+        "carbon_intensity": 112.758,
+        "conversion_factor": 0.3409490865329374
+    },
+    "Oman": {
+        "carbon_intensity": 564.635,
+        "conversion_factor": 1.7073004795626485
+    },
+    "Pakistan": {
+        "carbon_intensity": 440.608,
+        "conversion_factor": 1.3322770457005666
+    },
+    "Panama": {
+        "carbon_intensity": 161.677,
+        "conversion_factor": 0.4888666477179953
+    },
+    "Peru": {
+        "carbon_intensity": 266.478,
+        "conversion_factor": 0.8057559612721412
+    },
+    "Philippines": {
+        "carbon_intensity": 610.688,
+        "conversion_factor": 1.8465520473636148
+    },
+    "Papua New Guinea": {
+        "carbon_intensity": 507.246,
+        "conversion_factor": 1.5337719749151844
+    },
+    "Poland": {
+        "carbon_intensity": 661.926,
+        "conversion_factor": 2.0014816248284037
+    },
+    "Puerto Rico": {
+        "carbon_intensity": 678.738,
+        "conversion_factor": 2.052316475063347
+    },
+    "North Korea": {
+        "carbon_intensity": 389.587,
+        "conversion_factor": 1.1780036163740708
+    },
+    "Portugal": {
+        "carbon_intensity": 165.553,
+        "conversion_factor": 0.5005866024830822
+    },
+    "Paraguay": {
+        "carbon_intensity": 23.755,
+        "conversion_factor": 0.07182856693618127
+    },
+    "Palestine": {
+        "carbon_intensity": 516.129,
+        "conversion_factor": 1.560631716447245
+    },
+    "French Polynesia": {
+        "carbon_intensity": 442.857,
+        "conversion_factor": 1.3390774012905255
+    },
+    "Qatar": {
+        "carbon_intensity": 602.5,
+        "conversion_factor": 1.8217937941085758
+    },
+    "Reunion": {
+        "carbon_intensity": 572.816,
+        "conversion_factor": 1.7320375667487105
+    },
+    "Romania": {
+        "carbon_intensity": 240.583,
+        "conversion_factor": 0.7274566246772174
+    },
+    "Russia": {
+        "carbon_intensity": 441.039,
+        "conversion_factor": 1.3335802708047337
+    },
+    "Rwanda": {
+        "carbon_intensity": 316.327,
+        "conversion_factor": 0.9564855859070265
+    },
+    "Saudi Arabia": {
+        "carbon_intensity": 706.791,
+        "conversion_factor": 2.1371410083515263
+    },
+    "Sudan": {
+        "carbon_intensity": 263.158,
+        "conversion_factor": 0.7957171971286716
+    },
+    "Senegal": {
+        "carbon_intensity": 511.598,
+        "conversion_factor": 1.5469312223707206
+    },
+    "Singapore": {
+        "carbon_intensity": 470.783,
+        "conversion_factor": 1.4235179216129754
+    },
+    "Saint Helena": {
+        "carbon_intensity": 1000.0,
+        "conversion_factor": 3.0237241395992958
+    },
+    "Solomon Islands": {
+        "carbon_intensity": 700.0,
+        "conversion_factor": 2.116606897719507
+    },
+    "Sierra Leone": {
+        "carbon_intensity": 50.0,
+        "conversion_factor": 0.1511862069799648
+    },
+    "El Salvador": {
+        "carbon_intensity": 271.468,
+        "conversion_factor": 0.8208443447287417
+    },
+    "Somalia": {
+        "carbon_intensity": 578.947,
+        "conversion_factor": 1.7505760194485935
+    },
+    "Saint Pierre and Miquelon": {
+        "carbon_intensity": 600.0,
+        "conversion_factor": 1.8142344837595776
+    },
+    "Serbia": {
+        "carbon_intensity": 636.062,
+        "conversion_factor": 1.9232760236818074
+    },
+    "South Sudan": {
+        "carbon_intensity": 629.032,
+        "conversion_factor": 1.9020192429804244
+    },
+    "Sao Tome and Principe": {
+        "carbon_intensity": 642.857,
+        "conversion_factor": 1.9438222292103844
+    },
+    "Suriname": {
+        "carbon_intensity": 349.282,
+        "conversion_factor": 1.0561324149275213
+    },
+    "Slovakia": {
+        "carbon_intensity": 116.774,
+        "conversion_factor": 0.35309236267756816
+    },
+    "Slovenia": {
+        "carbon_intensity": 231.275,
+        "conversion_factor": 0.6993118003858272
+    },
+    "Sweden": {
+        "carbon_intensity": 40.695,
+        "conversion_factor": 0.12305045386099335
+    },
+    "Eswatini": {
+        "carbon_intensity": 172.414,
+        "conversion_factor": 0.521332373804873
+    },
+    "Seychelles": {
+        "carbon_intensity": 564.516,
+        "conversion_factor": 1.706940656390036
+    },
+    "Syria": {
+        "carbon_intensity": 701.661,
+        "conversion_factor": 2.1216293035153813
+    },
+    "Turks and Caicos Islands": {
+        "carbon_intensity": 653.846,
+        "conversion_factor": 1.9770499337804412
+    },
+    "Chad": {
+        "carbon_intensity": 628.571,
+        "conversion_factor": 1.900625306152069
+    },
+    "Togo": {
+        "carbon_intensity": 443.182,
+        "conversion_factor": 1.3400601116358952
+    },
+    "Thailand": {
+        "carbon_intensity": 549.583,
+        "conversion_factor": 1.6617873838133999
+    },
+    "Tajikistan": {
+        "carbon_intensity": 116.858,
+        "conversion_factor": 0.35334635550529453
+    },
+    "Turkmenistan": {
+        "carbon_intensity": 1306.025,
+        "conversion_factor": 3.949059319420171
+    },
+    "East Timor": {
+        "carbon_intensity": 666.667,
+        "conversion_factor": 2.015817100974244
+    },
+    "Tonga": {
+        "carbon_intensity": 625.0,
+        "conversion_factor": 1.88982758724956
+    },
+    "Trinidad and Tobago": {
+        "carbon_intensity": 681.529,
+        "conversion_factor": 2.0607556891369687
+    },
+    "Tunisia": {
+        "carbon_intensity": 563.956,
+        "conversion_factor": 1.7052473708718605
+    },
+    "Turkey": {
+        "carbon_intensity": 464.586,
+        "conversion_factor": 1.4047799031198784
+    },
+    "Taiwan": {
+        "carbon_intensity": 642.378,
+        "conversion_factor": 1.9423738653475167
+    },
+    "Tanzania": {
+        "carbon_intensity": 339.246,
+        "conversion_factor": 1.0257863194625028
+    },
+    "Uganda": {
+        "carbon_intensity": 44.527,
+        "conversion_factor": 0.13463736476393784
+    },
+    "Ukraine": {
+        "carbon_intensity": 259.693,
+        "conversion_factor": 0.78523999298496
+    },
+    "Uruguay": {
+        "carbon_intensity": 128.788,
+        "conversion_factor": 0.38941938449071417
+    },
+    "United States": {
+        "carbon_intensity": 369.473,
+        "conversion_factor": 1.1171844290301707
+    },
+    "Uzbekistan": {
+        "carbon_intensity": 1167.603,
+        "conversion_factor": 3.530509376568557
+    },
+    "Saint Vincent and the Grenadines": {
+        "carbon_intensity": 529.412,
+        "conversion_factor": 1.6007958441935426
+    },
+    "Venezuela": {
+        "carbon_intensity": 185.802,
+        "conversion_factor": 0.5618139925858283
+    },
+    "British Virgin Islands": {
+        "carbon_intensity": 647.059,
+        "conversion_factor": 1.9565279180449808
+    },
+    "United States Virgin Islands": {
+        "carbon_intensity": 632.353,
+        "conversion_factor": 1.9120610308480335
+    },
+    "Vietnam": {
+        "carbon_intensity": 475.449,
+        "conversion_factor": 1.4376266184483457
+    },
+    "Vanuatu": {
+        "carbon_intensity": 571.429,
+        "conversion_factor": 1.727843661367086
+    },
+    "Samoa": {
+        "carbon_intensity": 473.684,
+        "conversion_factor": 1.432289745341953
+    },
+    "Yemen": {
+        "carbon_intensity": 566.102,
+        "conversion_factor": 1.7117362828754406
+    },
+    "South Africa": {
+        "carbon_intensity": 707.686,
+        "conversion_factor": 2.1398472414564673
+    },
+    "Zambia": {
+        "carbon_intensity": 111.967,
+        "conversion_factor": 0.33855732073851436
+    },
+    "Zimbabwe": {
+        "carbon_intensity": 297.872,
+        "conversion_factor": 0.9006827569107215
+    }
+}

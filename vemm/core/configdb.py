@@ -299,6 +299,21 @@ class ConfigDB():
 
         return input_vars
 
+
+    def get_countries(self):
+        """Get the list of country_list_placeholder for which Carbon Intensity data is available."""
+        country_list_placeholder = ['Italy', 'Canada']
+        return country_list_placeholder
+
+
+    def get_conversion_factor(self, country):
+        """Get the conversion factor for the selected country to convert the emissions."""
+        cf = 1
+        if country == 'Canada':
+            cf = 0.514163123869883
+        return cf
+
+
     def __check_json(self, algorithm, hw, config, input_dependent=False):
         """Checks that the fields in the JSON configs are present and of of the expected types."""
         try:

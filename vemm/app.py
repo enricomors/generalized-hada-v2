@@ -212,6 +212,8 @@ def hada_gui():
         description_per_var = db.get_description_per_var(session['last_selected_algo'], session['last_input_dependent'])
         input_independent_algos = db.get_algorithms(input_dependent=False)
         input_dependent_algos = db.get_algorithms(input_dependent=True)
+        # TODO: add country list
+        countries = db.get_countries()
         #rendering_kwargs = {'algorithms': db.get_algorithms(input_dependent=session['last_input_dependent']),
         rendering_kwargs = {'algorithms': {'input-dependent': input_dependent_algos, 'input-independent': input_independent_algos},
                             'input_dependent': session['last_input_dependent'],
@@ -219,7 +221,8 @@ def hada_gui():
                             'price_per_hw': db.get_prices_per_hw(session['last_selected_algo'], session['last_input_dependent']),
                             'lb_per_var': lb_per_var,
                             'ub_per_var': ub_per_var,
-                            'description_per_var': description_per_var}
+                            'description_per_var': description_per_var,
+                            'countries': countries}
                 
         session['last_rendering_kwargs'] = rendering_kwargs
     except Exception as e:
