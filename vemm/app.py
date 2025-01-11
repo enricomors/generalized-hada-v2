@@ -31,6 +31,7 @@ categories_path_no_inp = "algorithms/categorical_mappings/input-independent"
 categories_path_inp = "algorithms/categorical_mappings/input-dependent"
 models_path_no_inp = 'algorithms/models/input-independent'
 models_path_inp = 'algorithms/models/input-dependent'
+emissions_conv_path = 'algorithms/emissions'
 
 init_type = os.getenv('INIT_TYPE')
 if init_type == 'local' or init_type is None:
@@ -213,7 +214,7 @@ def hada_gui():
         input_independent_algos = db.get_algorithms(input_dependent=False)
         input_dependent_algos = db.get_algorithms(input_dependent=True)
         # TODO: add country list
-        countries = db.get_countries()
+        countries = db.get_countries(emissions_conv_path)
         #rendering_kwargs = {'algorithms': db.get_algorithms(input_dependent=session['last_input_dependent']),
         rendering_kwargs = {'algorithms': {'input-dependent': input_dependent_algos, 'input-independent': input_independent_algos},
                             'input_dependent': session['last_input_dependent'],

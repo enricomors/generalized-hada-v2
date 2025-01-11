@@ -300,13 +300,15 @@ class ConfigDB():
         return input_vars
 
 
-    def get_countries(self):
+    def get_countries(self, path):
         """Get the list of country_list_placeholder for which Carbon Intensity data is available."""
-        country_list_placeholder = ['Italy', 'Canada']
-        return country_list_placeholder
+        fname = os.path.join(path, 'conversion_factors.json')
+        countries = json.load(open(fname))
+        print(countries)
+        return countries
 
 
-    def get_conversion_factor(self, country):
+    def get_conversion_factor(self, path, country):
         """Get the conversion factor for the selected country to convert the emissions."""
         cf = 1
         if country == 'Canada':
