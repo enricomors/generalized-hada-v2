@@ -7,12 +7,13 @@ from urllib.parse import urljoin
 class ConfigDB():
     """Exposes information stored in the JSON configs (one config per algorithm/hardware pair)."""
     @classmethod
-    def from_local(cls, path_no_inp, path_inp):
+    def from_local(cls, path_no_inp, path_inp, path_carbon_intensity):
         """Initialize ConfigDB using local configs.
 
         Args:
             path_no_inp (str): local path containing the configs (non input-dependent case).
             path_inp (str): local path containing the configs (input-dependent case).
+            path_carbon_intensity (str): local path containing the carbon intensity for each country (when emissions are avaiable)
 
         Returns:
             ConfigDB: instance of ConfigDB.
@@ -20,9 +21,17 @@ class ConfigDB():
 
         fnames_no_inp = [os.path.join(path_no_inp, fname) for fname in sorted(os.listdir(path_no_inp))]
         fnames_inp = [os.path.join(path_inp, fname) for fname in sorted(os.listdir(path_inp))]
+        fname_carbon_intensity = os.listdir(path_carbon_intensity)[0]
+
         #algo_hw_couples = set()
         configs_by_algo_hw_no_inp = {}
         configs_by_algo_hw_inp = {}
+        countries = {}
+
+        # loads carbon intensity data
+        if fname_carbon_intensity:
+            file_path= os.path.join(path_carbon_intensity, fname_carbon_intensity)
+            countries = json.load(open(file_path))
 
         # expected fnames: <algorithm>_<hw>.csv
         for fname in fnames_no_inp:
@@ -40,7 +49,7 @@ class ConfigDB():
         
         algo_hw_couples = set(list(configs_by_algo_hw_no_inp.keys())+list(configs_by_algo_hw_inp.keys()))
 
-        return cls(configs_by_algo_hw_no_inp, configs_by_algo_hw_inp, algo_hw_couples)
+        return cls(configs_by_algo_hw_no_inp, configs_by_algo_hw_inp, algo_hw_couples, countries)
 
     @classmethod
     def from_remote(cls, address):
@@ -74,18 +83,18 @@ class ConfigDB():
                 config = json.loads(requests.request('GET', algo_hw_url).content)
                 configs_by_algo_hw[case][(algorithm, hw)] = config
 
-
         algo_hw_couples = set(algo_hw_couples['input-independent'] + algo_hw_couples['input-dependent'])
 
         return cls(configs_by_algo_hw['input-independent'], configs_by_algo_hw['input-dependent'], algo_hw_couples)
 
-    def __init__(self, configs_no_inp, configs_inp, algo_hw_couples):
+    def __init__(self, configs_no_inp, configs_inp, algo_hw_couples, countries):
         """Initializes ConfigDB.
 
         Args:
             configs_no_inp (list[dict]): list of configs, with each configs being represented as a dict (no input-dependent case).
             configs_inp (list[dict]): list of configs, with each configs being represented as a dict (input-dependent case).
             algo_hw_couples (list[tuple[str,str]]): list of (algorith_id, hardware_id) couples, corresponding, in order, to the configs.
+            countries (list[dict]): list of countries and carbon intensity values for each country
         
         Raises:
             AttributeError: Hyperparameters and/or Targets not matching across different hardware given the same algorithm.
@@ -107,6 +116,7 @@ class ConfigDB():
         self.configs_inp = configs_inp
         self.algo_hw_couples = algo_hw_couples
         self.db = {'input-dependent':{}, 'input-independent': {}}
+        self.countries = countries
 
         for (algorithm, hw) in self.algo_hw_couples:
             # load JSON files
@@ -300,20 +310,14 @@ class ConfigDB():
         return input_vars
 
 
-    def get_countries(self, path):
+    def get_countries(self):
         """Get the list of country_list_placeholder for which Carbon Intensity data is available."""
-        fname = os.path.join(path, 'conversion_factors.json')
-        countries = json.load(open(fname))
-        print(countries)
-        return countries
+        return list(self.countries)
 
 
-    def get_conversion_factor(self, path, country):
-        """Get the conversion factor for the selected country to convert the emissions."""
-        cf = 1
-        if country == 'Canada':
-            cf = 0.514163123869883
-        return cf
+    def get_conversion_factor(self, country):
+        """Get the conversion factor for the selected country to convert the carbon_intensity."""
+        return self.countries[country]['conversion_factor']
 
 
     def __check_json(self, algorithm, hw, config, input_dependent=False):

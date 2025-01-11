@@ -26,16 +26,16 @@ data_path_no_inp = 'algorithms/data/input-independent'
 data_path_inp = 'algorithms/data/input-dependent'
 configs_path_no_inp = 'algorithms/configs/input-independent'
 configs_path_inp = 'algorithms/configs/input-dependent'
+carbon_intensity_path = 'algorithms/carbon_intensity'
 # for both init modalities
 categories_path_no_inp = "algorithms/categorical_mappings/input-independent"
 categories_path_inp = "algorithms/categorical_mappings/input-dependent"
 models_path_no_inp = 'algorithms/models/input-independent'
 models_path_inp = 'algorithms/models/input-dependent'
-emissions_conv_path = 'algorithms/emissions'
 
 init_type = os.getenv('INIT_TYPE')
 if init_type == 'local' or init_type is None:
-    db = ConfigDB.from_local(configs_path_no_inp, configs_path_inp)
+    db = ConfigDB.from_local(configs_path_no_inp, configs_path_inp, carbon_intensity_path)
     datasets = Datasets.from_local(db, data_path_no_inp, data_path_inp, categories_path_no_inp, categories_path_inp)
 elif init_type == 'remote':
     db = ConfigDB.from_remote('http://localhost:5333')
@@ -214,7 +214,7 @@ def hada_gui():
         input_independent_algos = db.get_algorithms(input_dependent=False)
         input_dependent_algos = db.get_algorithms(input_dependent=True)
         # TODO: add country list
-        countries = db.get_countries(emissions_conv_path)
+        countries = db.get_countries()
         #rendering_kwargs = {'algorithms': db.get_algorithms(input_dependent=session['last_input_dependent']),
         rendering_kwargs = {'algorithms': {'input-dependent': input_dependent_algos, 'input-independent': input_independent_algos},
                             'input_dependent': session['last_input_dependent'],

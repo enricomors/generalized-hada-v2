@@ -195,7 +195,7 @@ def HADA(db : ConfigDB,
                 chosen_hw = hw
                 break
         """
-        # scale co2 emissions by the country conversion factor
+        # scale co2 carbon_intensity by the country conversion factor
         for target in targets:
             if target == "CO2e(kg)":
                 scaling_factor = 1

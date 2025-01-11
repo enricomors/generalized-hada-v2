@@ -8,7 +8,9 @@ if __name__ == '__main__':
     
     #db = ConfigDB(path)
     #db = ConfigDB.from_remote('http://localhost:5333')
-    db = ConfigDB.from_local('./vemm/algorithms/configs/input-independent','./vemm/algorithms/configs/input-dependent')
+    db = ConfigDB.from_local('./vemm/algorithms/configs/input-independent',
+                             './vemm/algorithms/configs/input-dependent',
+                             './vemm/algorithms/carbon_intensity')
 
     #print(db.fnames)
     #print(db.db)

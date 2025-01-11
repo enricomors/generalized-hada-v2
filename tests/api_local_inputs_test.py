@@ -39,10 +39,11 @@ if __name__ == '__main__':
     categories_path_inp = "./vemm/algorithms/categorical_mappings/input-dependent"
     models_path_no_inp = './vemm/algorithms/models/input-independent'
     models_path_inp = './vemm/algorithms/models/input-dependent'
+    path_carbon_intensity = './vemm/algorithms/carbon_intensity'
     storage_ws_url = 'http://localhost:5333'
 
     ##### Init #####
-    db = ConfigDB.from_local(configs_path_no_inp, configs_path_inp)
+    db = ConfigDB.from_local(configs_path_no_inp, configs_path_inp, path_carbon_intensity)
     #db = ConfigDB.from_remote(storage_ws_url)
 
     datasets = Datasets.from_local(db, data_path_no_inp, data_path_inp, categories_path_no_inp, categories_path_inp)
