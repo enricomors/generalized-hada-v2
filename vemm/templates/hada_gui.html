@@ -124,12 +124,20 @@
                     <label class="label-inline">Input file</label>
                     <input type="file" id="fileUpload" name="fileUpload">
                 </div>
+                <div {% if not countries %}class="hidden"{% endif %} id="country_list">
+                    <label class="label-inline">Country</label>
+                    <select name="country" id="country">
+                        {% for country in countries %}
+                        <option value="{{country}}">{{ country }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
             </div>
             </div>
 
         <input value="optimize" type="hidden" name="form_id">
             <div class="row">
-                <div class="column column-33">
+                <div class="column column-50">
                     <label class="label-inline">Target</label>
                     <select name="target" id="target">
                         {% for target in targets %}
@@ -143,18 +151,9 @@
                     <br />
                 </div>
 
-                <div class="column column-33">
+                <div class="column column-50">
                     <label class="label-inline">Robustness factor</label>
                     <input type="text" name="robust_factor" id="robust_factor" placeholder="Optional">
-                </div>
-
-                <div class="column column-33">
-                    <label class="label-inline">Country</label>
-                    <select name="country" id="country">
-                        {% for country in countries %}
-                        <option value="{{country}}">{{ country }}</option>
-                        {% endfor %}
-                    </select>
                 </div>
             </div>
 

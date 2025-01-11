@@ -299,7 +299,6 @@ class ConfigDB():
         return [var for var,type in self.get_type_per_var(algorithm, input_dependent).items()
                 if type == 'str']
 
-
     def get_ml_input_vars(self, algorithm, input_dependent=False):
         """Get variables that are fed as input to the ML models."""
         input_vars = self.get_hyperparams(algorithm, input_dependent)
@@ -309,19 +308,20 @@ class ConfigDB():
 
         return input_vars
 
-
     def get_countries(self):
         """Get the list of country_list_placeholder for which Carbon Intensity data is available."""
         return list(self.countries)
-
 
     def get_conversion_factor(self, country):
         """Get the conversion factor for the selected country to convert the carbon_intensity."""
         return self.countries[country]['conversion_factor']
 
+    def has_emission_data(self, algorithm, input_dependent=False):
+        """Return true if algorithm has emissions data among its targets."""
+        return 'CO2e(kg)' in list(self.get_db_by_case(input_dependent)[algorithm]['targets'].keys())
 
     def __check_json(self, algorithm, hw, config, input_dependent=False):
-        """Checks that the fields in the JSON configs are present and of of the expected types."""
+        """Checks that the fields in the JSON configs are present and of the expected types."""
         try:
             # checking algorithm
             if type(config['name']) is not str:
