@@ -158,13 +158,19 @@ def parse_request_json(data):
     return optimization_request
 
 
-
-def format_solution(solution):
+def format_solution(solution, country):
     sol_hyperparams = {hyperparam:val for hyperparam,val in solution.hyperparams_values.items()}
     sol_targets = {target:val for target,val in solution.targets_values.items()}
+    # converts emissions based on country
+    if 'CO2e(kg)' in sol_targets:
+        scaling_factor = db.get_conversion_factor(country=country)
+        sol_targets['CO2e(kg)'] = sol_targets['CO2e(kg)'] * scaling_factor
     out = {'hw': solution.chosen_hw, 'hyperparams': sol_hyperparams,'targets': sol_targets}
 
     return out
+
+def convert_emissions():
+    pass
 
 # ==============================================================================
 # Routes (GUI)
@@ -204,7 +210,7 @@ def hada_gui():
                 solution = run_hada(optimization_request)
 
                 if solution:
-                    out = format_solution(solution)
+                    out = format_solution(solution, form_dict['country'])
                 else:
                     out = 'No solution.'
 
@@ -314,7 +320,7 @@ def optimize():
 
         ret = {'solution': None}
         if solution:
-            ret = {'solution': format_solution(solution)}
+            ret = {'solution': format_solution(solution, data['country'])}
 
     except Exception as e:
         print(e)

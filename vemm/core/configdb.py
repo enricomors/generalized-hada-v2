@@ -309,7 +309,7 @@ class ConfigDB():
         return input_vars
 
     def get_countries(self):
-        """Get the list of country_list_placeholder for which Carbon Intensity data is available."""
+        """Get the list of countries for which Carbon Intensity data is available."""
         return list(self.countries)
 
     def get_conversion_factor(self, country):
