@@ -8,6 +8,7 @@ class OptimizationRequest():
                  robustness_fact,
                  user_constraints,
                  hws_prices,
+                 country,
                  inputs=None):
 
         self.input_dependent=False
@@ -51,6 +52,9 @@ class OptimizationRequest():
             if not isinstance(inputs, Inputs):
                 raise AttributeError("Hardware prices must be specified via HardwarePrices class.")
             self.inputs = inputs
+
+        # country
+        self.country = country
 
     def is_input_dependent(self):
         return self.input_dependent
@@ -163,10 +167,11 @@ class HardwarePrices():
 
 class OptimizationSolution():
     """Class containing a solution produced by HADA."""
-    def __init__(self, chosen_hw, hyperparams_values, targets_values):
+    def __init__(self, chosen_hw, hyperparams_values, targets_values, country):
         self.chosen_hw = chosen_hw
         self.hyperparams_values = hyperparams_values
         self.targets_values = targets_values
+        self.country = country
 
     def __str__(self):
-        return f'chosen hw: {self.chosen_hw}; hyperparams values: {self.hyperparams_values}; targets values: {self.targets_values}'
+        return f'chosen hw: {self.chosen_hw}; hyperparams values: {self.hyperparams_values}; targets values: {self.targets_values}; country: {self.country}'

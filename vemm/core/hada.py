@@ -203,7 +203,10 @@ def HADA(db : ConfigDB,
             hyperparams_values = dict({hyperparam : value for hyperparam, value in hyperparams_values.items() if hyperparam not in str_vars[var]},
             **chosen_category)
 
+        # return the country selected in the request (can be None)
+        country = request.country
+
         #solution = {'chosen_hw': chosen_hw, 'hyperparams': hyperparams_values, 'targets': targets_values}
-        solution = OptimizationSolution(chosen_hw, hyperparams_values, targets_values)
+        solution = OptimizationSolution(chosen_hw, hyperparams_values, targets_values, country)
 
     return solution

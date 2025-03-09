@@ -90,7 +90,8 @@ def parse_request_form(algorithm, form_dict, input_dependent=False, inputs_file=
                     'opt_type': form_dict['objective_type'],
                     'robustness_fact': sanitize_field(form_dict['robust_factor']),
                     'user_constraints': user_constraints,
-                    'hws_prices': hws_prices}
+                    'hws_prices': hws_prices,
+                    'country': form_dict['country']}
  
     if input_dependent:
         inputs = Inputs(db, algorithm)
@@ -117,12 +118,13 @@ def parse_request_json(data):
         price_per_hw: [
             {'hw':'pc', price: 30},
             ...
-        ]
+        ],
         "inputs": [  # optional, only for input-dependent cases
         {
         "name": "input_var_0",
         "value": 32
         },
+        "country": "Italy",
         ...
     ],
     }
@@ -146,7 +148,6 @@ def parse_request_json(data):
         for hw_price in data['price_per_hw']:
             hws_prices.add_hw_price(hw_price['hw'], hw_price['price'])
 
-
     optimization_request = OptimizationRequest(db=db,
                                                algorithm=data['algorithm'],
                                                target=data['objective']['target'],
@@ -154,19 +155,20 @@ def parse_request_json(data):
                                                robustness_fact=data['robustness_fact'],
                                                user_constraints=user_constraints,
                                                hws_prices=hws_prices,
-                                               inputs=inputs)
+                                               inputs=inputs,
+                                               country=data['country'])
     return optimization_request
 
 
-def format_solution(solution, country):
+def format_solution(solution):
     sol_hyperparams = {hyperparam:val for hyperparam,val in solution.hyperparams_values.items()}
     sol_targets = {target:val for target,val in solution.targets_values.items()}
     # converts emissions based on country
     if 'CO2e(kg)' in sol_targets:
-        scaling_factor = db.get_conversion_factor(country=country)
+        scaling_factor = db.get_conversion_factor(country=solution.country)
         sol_targets['CO2e(kg)'] = sol_targets['CO2e(kg)'] * scaling_factor
-    out = {'hw': solution.chosen_hw, 'hyperparams': sol_hyperparams,'targets': sol_targets}
 
+    out = {'hw': solution.chosen_hw, 'hyperparams': sol_hyperparams, 'targets': sol_targets}
     return out
 
 def convert_emissions():
@@ -210,7 +212,7 @@ def hada_gui():
                 solution = run_hada(optimization_request)
 
                 if solution:
-                    out = format_solution(solution, form_dict['country'])
+                    out = format_solution(solution)
                 else:
                     out = 'No solution.'
 
@@ -219,7 +221,7 @@ def hada_gui():
         description_per_var = db.get_description_per_var(session['last_selected_algo'], session['last_input_dependent'])
         input_independent_algos = db.get_algorithms(input_dependent=False)
         input_dependent_algos = db.get_algorithms(input_dependent=True)
-        # TODO: add country list only if emissions data are present
+        # add country list only if emissions data are present
         countries = []
         if db.has_emission_data(session['last_selected_algo'], session['last_input_dependent']):
             countries = db.get_countries()
@@ -320,7 +322,7 @@ def optimize():
 
         ret = {'solution': None}
         if solution:
-            ret = {'solution': format_solution(solution, data['country'])}
+            ret = {'solution': format_solution(solution)}
 
     except Exception as e:
         print(e)
