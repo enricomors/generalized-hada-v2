@@ -17,7 +17,7 @@
         {"ID": "cpuCount", "description": null, "type": "int", "LB":null, "UB": null}
     ],
     "inputs": [
-        {"ID": "nodes",  "description": null, "type": "int", "LB": 2002, "UB": 15935886},
-        {"ID": "arcs",  "description": null, "type": "int", "LB": 47872, "UB": 111222600}
+        {"ID": "nodes",  "description": null, "type": "int", "LB": 2002, "UB": 134217730},
+        {"ID": "arcs",  "description": null, "type": "int", "LB": 47872, "UB": 921311200}
     ]
 }
