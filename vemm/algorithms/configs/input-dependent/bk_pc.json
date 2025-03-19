@@ -3,7 +3,7 @@
     "HW_ID": "pc",
     "HW_price": null,
     "hyperparams": [
-        {"ID": "algorithm", "description":  null, "type": "str"}
+        {"ID": "implementation", "description":  null, "type": "str"}
     ],
     "targets": [
         {"ID": "time(s)", "description": null, "type": "float", "LB": null, "UB": null},
