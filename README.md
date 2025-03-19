@@ -36,9 +36,9 @@ The service runs as a Flask application. It wraps the HADA engine, providing bot
 Docker needs to be installed on the system.
 #### CPLEX
 CPLEX is required, it can be obtained [here](https://www.ibm.com/products/ilog-cplex-optimization-studio) (free for academic use).
-Docker can build the image once the file `cplex_studio2210.linux_x86_64.bin` is placed in the main directory and the execution permissions are granted with:
+Docker can build the image once the file `cplex_studio2211.linux_x86_64.bin` is placed in the main directory and the execution permissions are granted with:
 ```
-chmod +x cplex_studio2210.linux_x86_64.bin
+chmod +x cplex_studio2211.linux_x86_64.bin
 ```
 #### Data Exchange service
   The Data Exchange service is expected to run at `localhost:5333` prior to the execution of this service.
